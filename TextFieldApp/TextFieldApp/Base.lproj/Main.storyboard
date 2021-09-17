@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextFieldApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1OS-TX-994" userLabel="TextField1">
+                                <rect key="frame" x="61" y="80" width="297" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="i6W-cj-KRa"/>
+                                    <constraint firstAttribute="width" constant="297" id="rn5-uN-Ulj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G2j-1u-7LW" userLabel="TextField2">
+                                <rect key="frame" x="61" y="136" width="297" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="297" id="CXE-Ff-tkN"/>
+                                    <constraint firstAttribute="height" constant="34" id="Ndn-p0-u3A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4pS-Di-lWV" userLabel="TextField3">
+                                <rect key="frame" x="61" y="190" width="297" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="297" id="Fs8-Ol-CIq"/>
+                                    <constraint firstAttribute="height" constant="34" id="dSh-To-Pf1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbT-5D-v4N" userLabel="countLabel">
+                                <rect key="frame" x="165.5" y="273" width="83" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="Iha-gt-vvi"/>
+                                    <constraint firstAttribute="height" constant="83" id="WvK-Nc-CG4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.010265815808811486" green="0.49774607434350604" blue="0.47082276293227704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1OS-TX-994" firstAttribute="leading" secondItem="4pS-Di-lWV" secondAttribute="leading" id="0Oo-Fp-AjZ"/>
+                            <constraint firstItem="G2j-1u-7LW" firstAttribute="top" secondItem="1OS-TX-994" secondAttribute="bottom" constant="22" id="148-hq-Me4"/>
+                            <constraint firstItem="ZbT-5D-v4N" firstAttribute="top" secondItem="4pS-Di-lWV" secondAttribute="bottom" constant="49" id="5kk-gp-OIB"/>
+                            <constraint firstItem="1OS-TX-994" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="9An-sj-6et"/>
+                            <constraint firstItem="4pS-Di-lWV" firstAttribute="top" secondItem="G2j-1u-7LW" secondAttribute="bottom" constant="20" id="EaQ-X5-TjQ"/>
+                            <constraint firstItem="1OS-TX-994" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="mxy-bV-arC"/>
+                            <constraint firstItem="1OS-TX-994" firstAttribute="leading" secondItem="G2j-1u-7LW" secondAttribute="leading" id="wsZ-bV-UCP"/>
+                            <constraint firstItem="ZbT-5D-v4N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z1y-tt-hqn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="ZbT-5D-v4N" id="KOe-XC-dUQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="98.4375"/>
+        </scene>
+    </scenes>
+</document>
