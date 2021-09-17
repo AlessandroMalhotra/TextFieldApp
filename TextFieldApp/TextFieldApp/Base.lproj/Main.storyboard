@@ -68,6 +68,9 @@
                     </view>
                     <connections>
                         <outlet property="countLabel" destination="ZbT-5D-v4N" id="KOe-XC-dUQ"/>
+                        <outlet property="textField1" destination="1OS-TX-994" id="tCe-sc-oc0"/>
+                        <outlet property="textField2" destination="G2j-1u-7LW" id="rb3-s7-b9C"/>
+                        <outlet property="textField3" destination="4pS-Di-lWV" id="hag-PL-JQZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

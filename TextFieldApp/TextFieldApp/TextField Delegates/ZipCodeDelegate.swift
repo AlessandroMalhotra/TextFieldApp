@@ -18,7 +18,7 @@ class ZipCodeDelegate: NSObject, UITextFieldDelegate {
         
         let newText = textField.text! as NSString
         
-        return newText.length <= 5
+        return newText.length < 5
     }
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
