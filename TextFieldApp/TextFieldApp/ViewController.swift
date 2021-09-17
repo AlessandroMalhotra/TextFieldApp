@@ -16,7 +16,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var countLabel: UILabel!
     
     // MARK: Delegate Objects
-    
     let zipCodeDelegate = ZipCodeDelegate()
 
     override func viewDidLoad() {

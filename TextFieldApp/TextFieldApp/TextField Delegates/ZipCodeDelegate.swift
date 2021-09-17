@@ -11,7 +11,20 @@ import UIKit
 
 class ZipCodeDelegate: NSObject, UITextFieldDelegate {
     
-    /// The text field can only allow 5 digits, once you get 5 digits can't type anymore
-    /// keyboard needs to be a number pad, can do this in storyboard under attributes inspector
-    /// revist emoji delegate for line 40/41 may need the code there 
+    var count = 0
+    
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        let newText = textField.text! as NSString
+        
+        return newText.length <= 5
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        
+        return true;
+    }
 }
