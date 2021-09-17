@@ -11,7 +11,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextFieldApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -24,31 +24,31 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G2j-1u-7LW" userLabel="TextField2">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$0.00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G2j-1u-7LW" userLabel="TextField2">
                                 <rect key="frame" x="61" y="136" width="297" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="297" id="CXE-Ff-tkN"/>
                                     <constraint firstAttribute="height" constant="34" id="Ndn-p0-u3A"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4pS-Di-lWV" userLabel="TextField3">
-                                <rect key="frame" x="61" y="190" width="297" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="The switch is set to on!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4pS-Di-lWV" userLabel="TextField3">
+                                <rect key="frame" x="61" y="192" width="297" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="297" id="Fs8-Ol-CIq"/>
                                     <constraint firstAttribute="height" constant="34" id="dSh-To-Pf1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbT-5D-v4N" userLabel="countLabel">
-                                <rect key="frame" x="165.5" y="273" width="83" height="83"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbT-5D-v4N" userLabel="countLabel">
+                                <rect key="frame" x="168" y="275" width="83" height="83"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="83" id="Iha-gt-vvi"/>
                                     <constraint firstAttribute="height" constant="83" id="WvK-Nc-CG4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -60,10 +60,10 @@
                             <constraint firstItem="G2j-1u-7LW" firstAttribute="top" secondItem="1OS-TX-994" secondAttribute="bottom" constant="22" id="148-hq-Me4"/>
                             <constraint firstItem="ZbT-5D-v4N" firstAttribute="top" secondItem="4pS-Di-lWV" secondAttribute="bottom" constant="49" id="5kk-gp-OIB"/>
                             <constraint firstItem="1OS-TX-994" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="9An-sj-6et"/>
-                            <constraint firstItem="4pS-Di-lWV" firstAttribute="top" secondItem="G2j-1u-7LW" secondAttribute="bottom" constant="20" id="EaQ-X5-TjQ"/>
+                            <constraint firstItem="4pS-Di-lWV" firstAttribute="top" secondItem="G2j-1u-7LW" secondAttribute="bottom" constant="22" id="EaQ-X5-TjQ"/>
+                            <constraint firstItem="1OS-TX-994" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XgW-K3-2Ph"/>
                             <constraint firstItem="1OS-TX-994" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="mxy-bV-arC"/>
                             <constraint firstItem="1OS-TX-994" firstAttribute="leading" secondItem="G2j-1u-7LW" secondAttribute="leading" id="wsZ-bV-UCP"/>
-                            <constraint firstItem="ZbT-5D-v4N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z1y-tt-hqn"/>
                         </constraints>
                     </view>
                     <connections>

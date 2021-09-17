@@ -14,6 +14,7 @@
 		5630A1BF26F4950E00EDEB9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5630A1BE26F4950E00EDEB9A /* Assets.xcassets */; };
 		5630A1C226F4950E00EDEB9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5630A1C026F4950E00EDEB9A /* LaunchScreen.storyboard */; };
 		5630A1CC26F49C8E00EDEB9A /* ZipCodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630A1CB26F49C8E00EDEB9A /* ZipCodeDelegate.swift */; };
+		5630A1CF26F4BBFA00EDEB9A /* CurrencyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630A1CE26F4BBFA00EDEB9A /* CurrencyDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5630A1C126F4950E00EDEB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5630A1C326F4950E00EDEB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5630A1CB26F49C8E00EDEB9A /* ZipCodeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeDelegate.swift; sourceTree = "<group>"; };
+		5630A1CE26F4BBFA00EDEB9A /* CurrencyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				5630A1CB26F49C8E00EDEB9A /* ZipCodeDelegate.swift */,
+				5630A1CE26F4BBFA00EDEB9A /* CurrencyDelegate.swift */,
 			);
 			path = "TextField Delegates";
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5630A1BA26F4950900EDEB9A /* ViewController.swift in Sources */,
+				5630A1CF26F4BBFA00EDEB9A /* CurrencyDelegate.swift in Sources */,
 				5630A1CC26F49C8E00EDEB9A /* ZipCodeDelegate.swift in Sources */,
 				5630A1B626F4950900EDEB9A /* AppDelegate.swift in Sources */,
 				5630A1B826F4950900EDEB9A /* SceneDelegate.swift in Sources */,
