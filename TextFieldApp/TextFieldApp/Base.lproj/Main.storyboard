@@ -22,7 +22,7 @@
                                     <constraint firstAttribute="width" constant="297" id="rn5-uN-Ulj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G2j-1u-7LW" userLabel="TextField2">
                                 <rect key="frame" x="61" y="136" width="297" height="34"/>
