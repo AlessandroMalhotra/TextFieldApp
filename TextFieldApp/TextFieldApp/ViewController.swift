@@ -13,10 +13,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
     @IBOutlet weak var textField3: UITextField!
-    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var onOfSwitch: UISwitch!
     
     // MARK: Delegate Objects
     let zipCodeDelegate = ZipCodeDelegate()
+    let currencyDelegate = CurrencyDelegte()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         // Set the three delegates
         self.textField1.delegate = zipCodeDelegate
+        self.textField2.delegate = currencyDelegate
     }
 
 
