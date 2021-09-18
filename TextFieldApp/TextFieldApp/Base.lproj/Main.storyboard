@@ -63,6 +63,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="onOfSwitch" destination="Ple-Ji-ChE" id="9Zf-zd-xIa"/>
                         <outlet property="textField1" destination="1OS-TX-994" id="tCe-sc-oc0"/>
                         <outlet property="textField2" destination="G2j-1u-7LW" id="rb3-s7-b9C"/>
                         <outlet property="textField3" destination="4pS-Di-lWV" id="hag-PL-JQZ"/>

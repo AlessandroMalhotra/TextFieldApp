@@ -9,7 +9,7 @@ import Foundation
 
 import UIKit
 
-class CurrencyDelegte: NSObject, UITextFieldDelegate {
+class CurrencyDelegate: NSObject, UITextFieldDelegate {
     
     var number = Int()
     
