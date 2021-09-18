@@ -24,14 +24,41 @@ class CurrencyDelegte: NSObject, UITextFieldDelegate {
         
         number = Int(textField.text!)!
         
+
+        let text = formatToString(number)
+        
+        let oldText = textField.text! as NSString
+        var newText = oldText.replacingCharacters(in: range, with: string)
+        
+        newText = text
+        
+        textField.text = newText
+        
+        return false
+        
+    }
+    
+    func formatToString(_ value: Int) -> String {
+        
         let newNumber = NumberFormatter()
         
-        let formattedNumber = newNumber.string(from: NSNumber(value: number))
+        newNumber.numberStyle = .currency
+        newNumber.minimumFractionDigits = 2
+        newNumber.maximumFractionDigits = 2
+        newNumber.currencySymbol = "$"
         
-        var newText = formattedNumber! as NSString
-        newText = newText.replacingCharacters(in: range, with: formattedNumber!) as NSString
+        return newNumber.string(from: NSNumber(value: value))!
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField.text!.isEmpty {
+            textField.text = "$0.00"
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
         
-        
-        return true
+        return true;
     }
 }
