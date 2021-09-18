@@ -11,7 +11,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextFieldApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -41,34 +41,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbT-5D-v4N" userLabel="countLabel">
-                                <rect key="frame" x="166" y="291" width="83" height="83"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ple-Ji-ChE">
+                                <rect key="frame" x="185" y="286" width="51" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="83" id="Iha-gt-vvi"/>
-                                    <constraint firstAttribute="height" constant="83" id="WvK-Nc-CG4"/>
+                                    <constraint firstAttribute="width" constant="49" id="9An-xy-P51"/>
+                                    <constraint firstAttribute="height" constant="31" id="FNW-AK-3C4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.010265815808811486" green="0.49774607434350604" blue="0.47082276293227704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1OS-TX-994" firstAttribute="leading" secondItem="4pS-Di-lWV" secondAttribute="leading" id="0Oo-Fp-AjZ"/>
                             <constraint firstItem="G2j-1u-7LW" firstAttribute="top" secondItem="1OS-TX-994" secondAttribute="bottom" constant="22" id="148-hq-Me4"/>
-                            <constraint firstItem="ZbT-5D-v4N" firstAttribute="top" secondItem="4pS-Di-lWV" secondAttribute="bottom" constant="49" id="5kk-gp-OIB"/>
                             <constraint firstItem="1OS-TX-994" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="9An-sj-6et"/>
                             <constraint firstItem="4pS-Di-lWV" firstAttribute="top" secondItem="G2j-1u-7LW" secondAttribute="bottom" constant="22" id="EaQ-X5-TjQ"/>
                             <constraint firstItem="1OS-TX-994" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XgW-K3-2Ph"/>
+                            <constraint firstItem="Ple-Ji-ChE" firstAttribute="top" secondItem="4pS-Di-lWV" secondAttribute="bottom" constant="60" id="lTC-Yd-gYu"/>
                             <constraint firstItem="1OS-TX-994" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="mxy-bV-arC"/>
-                            <constraint firstItem="ZbT-5D-v4N" firstAttribute="centerX" secondItem="4pS-Di-lWV" secondAttribute="centerX" id="rx6-VF-WxI"/>
                             <constraint firstItem="1OS-TX-994" firstAttribute="leading" secondItem="G2j-1u-7LW" secondAttribute="leading" id="wsZ-bV-UCP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZbT-5D-v4N" secondAttribute="trailing" constant="163" id="yZm-lr-Ffw"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="countLabel" destination="ZbT-5D-v4N" id="KOe-XC-dUQ"/>
                         <outlet property="textField1" destination="1OS-TX-994" id="tCe-sc-oc0"/>
                         <outlet property="textField2" destination="G2j-1u-7LW" id="rb3-s7-b9C"/>
                         <outlet property="textField3" destination="4pS-Di-lWV" id="hag-PL-JQZ"/>
