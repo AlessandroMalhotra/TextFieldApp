@@ -47,7 +47,9 @@ class CurrencyDelegte: NSObject, UITextFieldDelegate {
         newNumber.maximumFractionDigits = 2
         newNumber.currencySymbol = "$"
         
-        return newNumber.string(from: NSNumber(value: value))!
+        let string = newNumber.string(from: NSNumber(value: value))!
+        
+        return string
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
