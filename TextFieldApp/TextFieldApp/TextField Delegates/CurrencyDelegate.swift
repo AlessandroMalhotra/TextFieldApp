@@ -23,11 +23,11 @@ class CurrencyDelegate: NSObject, UITextFieldDelegate {
         let oldText = textField.text! as NSString
         var newText = oldText.replacingCharacters(in: range, with: string)
         
-        let text = formatToString(Int(textField.text!)!)
+        ///let text = formatToString(Int(textField.text!)!)
         
-        newText = text
+        ///newText = text
         
-        textField.text = newText
+        ///textField.text = newText
         
         return false
         

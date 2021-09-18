@@ -26,8 +26,32 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Set the three delegates
         self.textField1.delegate = zipCodeDelegate
         self.textField2.delegate = currencyDelegate
+        self.textField3.delegate = self
+        
+        self.onOfSwitch.setOn(false, animated: false)
     }
-
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        var newText = textField.text! as NSString
+        newText = newText.replacingCharacters(in: range, with: string) as NSString
+        
+        return true
+    
+    }
+    
+    @IBAction func switchOnOrOf()  {
+        
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) -> Bool {
+        
+        if onOfSwitch.isOn {
+            return true
+        } else {
+            return false
+        }
+    }
 
 }
 
