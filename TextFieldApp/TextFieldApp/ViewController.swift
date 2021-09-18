@@ -31,26 +31,24 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.onOfSwitch.setOn(false, animated: false)
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
-        var newText = textField.text! as NSString
-        newText = newText.replacingCharacters(in: range, with: string) as NSString
-        
-        return true
     
-    }
-    
-    @IBAction func switchOnOrOf()  {
+    @IBAction func switchOnOrOf(_ sender: AnyObject)  {
+        
+        if !(sender as! UISwitch).isOn {
+            self.textField3.resignFirstResponder()
+        }
         
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) -> Bool {
         
-        if onOfSwitch.isOn {
-            return true
-        } else {
-            return false
-        }
+        return self.onOfSwitch.isOn
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true;
     }
 
 }
