@@ -15,7 +15,6 @@
 		5630A1C226F4950E00EDEB9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5630A1C026F4950E00EDEB9A /* LaunchScreen.storyboard */; };
 		5630A1CC26F49C8E00EDEB9A /* ZipCodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630A1CB26F49C8E00EDEB9A /* ZipCodeDelegate.swift */; };
 		5630A1CF26F4BBFA00EDEB9A /* CurrencyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5630A1CE26F4BBFA00EDEB9A /* CurrencyDelegate.swift */; };
-		56BA450B26F610F200C4E4E3 /* SwitchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BA450A26F610F200C4E4E3 /* SwitchDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		5630A1C326F4950E00EDEB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5630A1CB26F49C8E00EDEB9A /* ZipCodeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeDelegate.swift; sourceTree = "<group>"; };
 		5630A1CE26F4BBFA00EDEB9A /* CurrencyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDelegate.swift; sourceTree = "<group>"; };
-		56BA450A26F610F200C4E4E3 /* SwitchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +77,6 @@
 			children = (
 				5630A1CB26F49C8E00EDEB9A /* ZipCodeDelegate.swift */,
 				5630A1CE26F4BBFA00EDEB9A /* CurrencyDelegate.swift */,
-				56BA450A26F610F200C4E4E3 /* SwitchDelegate.swift */,
 			);
 			path = "TextField Delegates";
 			sourceTree = "<group>";
@@ -154,7 +151,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56BA450B26F610F200C4E4E3 /* SwitchDelegate.swift in Sources */,
 				5630A1BA26F4950900EDEB9A /* ViewController.swift in Sources */,
 				5630A1CF26F4BBFA00EDEB9A /* CurrencyDelegate.swift in Sources */,
 				5630A1CC26F49C8E00EDEB9A /* ZipCodeDelegate.swift in Sources */,

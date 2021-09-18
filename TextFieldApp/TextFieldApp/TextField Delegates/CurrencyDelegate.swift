@@ -11,8 +11,6 @@ import UIKit
 
 class CurrencyDelegate: NSObject, UITextFieldDelegate {
     
-    var number = Int()
-    
     ///  dollar sign field that begins with the text $0.00, and then fills in the dollar figure as digits are added. For example, typing 4-2-7-5 would produce $0.00, $0.04, $0.42, $4.27, $42.75.
     /// Update the text in textfield to increment as user types the digits, implent func text field method to update the text
     
@@ -22,13 +20,10 @@ class CurrencyDelegate: NSObject, UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        number = Int(textField.text!)!
-        
-
-        let text = formatToString(number)
-        
         let oldText = textField.text! as NSString
         var newText = oldText.replacingCharacters(in: range, with: string)
+        
+        let text = formatToString(Int(textField.text!)!)
         
         newText = text
         

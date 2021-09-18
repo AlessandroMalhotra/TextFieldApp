@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Delegate Objects
     let zipCodeDelegate = ZipCodeDelegate()
-    let currencyDelegate = CurrencyDelegte()
+    let currencyDelegate = CurrencyDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
