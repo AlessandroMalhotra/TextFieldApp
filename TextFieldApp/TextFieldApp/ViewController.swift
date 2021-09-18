@@ -31,16 +31,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.onOfSwitch.setOn(false, animated: false)
     }
     
-    
-    @IBAction func switchOnOrOf(_ sender: AnyObject)  {
-        
-        if !(sender as! UISwitch).isOn {
-            self.textField3.resignFirstResponder()
-        }
-        
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) -> Bool {
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         
         return self.onOfSwitch.isOn
     }
@@ -49,6 +40,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         
         return true;
+    }
+    
+    @IBAction func switchOnOrOf(_ sender: AnyObject)  {
+        
+        if !(sender as! UISwitch).isOn {
+            self.textField3.resignFirstResponder()
+        }
+        
     }
 
 }

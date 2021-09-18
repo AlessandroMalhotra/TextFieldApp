@@ -48,7 +48,7 @@
                                     <constraint firstAttribute="height" constant="31" id="FNW-AK-3C4"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="switchOnOrOf" destination="BYZ-38-t0r" eventType="valueChanged" id="vws-jz-fyW"/>
+                                    <action selector="switchOnOrOf:" destination="BYZ-38-t0r" eventType="valueChanged" id="uSl-Oh-Ufl"/>
                                 </connections>
                             </switch>
                         </subviews>
